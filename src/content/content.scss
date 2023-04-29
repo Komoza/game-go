@@ -1,0 +1,63 @@
+.content {
+  margin-top: 90px;
+  width: 1340px;
+  display: flex;
+  flex-direction: column;
+  background-color: #161b1d;
+  border-radius: 16px;
+  padding: 20px;
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
+    height: 340px;
+    background: grey;
+    border-radius: 16px;
+    padding: 20px;
+  }
+  &__name {
+    font-size: 24px;
+    color: white;
+  }
+  &__description {
+    font-size: 18px;
+    color: #ffffff80;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 16px;
+  }
+  &__slider {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #262a2c;
+    border-radius: 50%;
+    color: #6f7478;
+    &--active {
+        background: white;
+        color: black;
+    }
+  }
+}
+
+.--big {
+    grid-column: span 3;
+}
+.--small {
+    grid-column: span 2;
+}
+
