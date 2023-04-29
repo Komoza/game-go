@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   width: 1340px;
-  z-index: 10;
+  z-index: 20;
   background-color: #161b1d;
 }
 .header__logo, .header__search, .header__login, .header__switch-theme {
@@ -58,7 +58,7 @@
   top: -30px;
   left: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 10;
   background-color: #161b1d;
   display: flex;
   justify-content: center;
@@ -97,5 +97,31 @@
   }
   100% {
     top: -30px;
+  }
+}
+.block-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 72px;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: block-screen-on 0.3s linear forwards;
+}
+
+@keyframes block-screen-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes block-screen-off {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }/*# sourceMappingURL=header.css.map */

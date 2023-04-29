@@ -21,10 +21,14 @@
     height: 340px;
     background: grey;
     border-radius: 16px;
-    padding: 20px;
   }
   &__name {
-    font-size: 24px;
+    font-size: 32px;
+    background-color: rgba($color: #000000, $alpha: .5);
+    text-align: center;
+    border-radius: 8px;
+    padding: 25px;
+    font-weight: bold;
     color: white;
   }
   &__description {

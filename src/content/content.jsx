@@ -6,44 +6,19 @@ export const Content = () => {
     <div className="content">
       <div className="content__wrap">
         <div className="content__card --big">
-          <div className="content__name">Lorem ipsum dolor sit amet.</div>
-          <div className="content__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            architecto. Maxime officiis impedit, aut voluptatum officia modi
-            consectetur veniam esse?
-          </div>
+          <div className="content__name">The Witcher 3: Wild Hunt</div>
         </div>
         <div className="content__card --big">
-          <div className="content__name">Lorem ipsum dolor sit amet.</div>
-          <div className="content__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            architecto. Maxime officiis impedit, aut voluptatum officia modi
-            consectetur veniam esse?
-          </div>
+          <div className="content__name">Elden Ring</div>
         </div>
         <div className="content__card --small">
-          <div className="content__name">Lorem ipsum dolor sit amet.</div>
-          <div className="content__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            architecto. Maxime officiis impedit, aut voluptatum officia modi
-            consectetur veniam esse?
-          </div>
+          <div className="content__name">Death Stranding</div>
         </div>
         <div className="content__card --small">
-          <div className="content__name">Lorem ipsum dolor sit amet.</div>
-          <div className="content__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            architecto. Maxime officiis impedit, aut voluptatum officia modi
-            consectetur veniam esse?
-          </div>
+          <div className="content__name">Overwatch</div>
         </div>
         <div className="content__card --small">
-          <div className="content__name">Lorem ipsum dolor sit amet.</div>
-          <div className="content__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            architecto. Maxime officiis impedit, aut voluptatum officia modi
-            consectetur veniam esse?
-          </div>
+          <div className="content__name">God of War</div>
         </div>
       </div>
       <div className="content__pagination">

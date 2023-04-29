@@ -14,10 +14,10 @@ export const Header = () => {
       }, 300);
       document.querySelector(".header__search-panel").style.animation =
         "slideOff 0.3s linear forwards";
+      document.querySelector(".block-screen").style.animation =
+        "block-screen-off 0.3s linear forwards";
     } else {
       setIsSearch(true);
-      document.querySelector(".header__search-panel").style.animation =
-        "slideOn 0.3s linear forwards";
     }
   };
 
@@ -67,6 +67,7 @@ export const Header = () => {
           />
         </div>
       )}
+      {isSearch && <div className="block-screen"></div>}
     </div>
   );
 };
