@@ -2,14 +2,14 @@ import { useState } from "react";
 import "./App.css"
 import "./header/header.css"
 import {Header} from "./header/header";
-import "./content/content.css"
-import {Content} from "./content/content";
+import "./recommended/recommended.css"
+import {Recommended} from "./recommended/recommended";
 
 function App() {
   return (
     <div className="container">
       <Header />
-      <Content />
+      <Recommended />
     </div>
   );
 }

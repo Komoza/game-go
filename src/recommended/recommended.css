@@ -1,0 +1,96 @@
+.recommended {
+  margin-top: 90px;
+  width: 1340px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background-color: #161b1d;
+  border-radius: 16px;
+  padding: 20px;
+}
+.recommended__text {
+  color: white;
+  align-self: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+.recommended__wrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.recommended__card {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 30px;
+  background: grey;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.recommended__card:hover .recommended__name {
+  height: 100%;
+}
+.recommended__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recommended__image--the-witcher-3 {
+  background-image: url(../assets/image/games/the-witcher-3.jpg);
+}
+.recommended__image--elden-ring {
+  background-image: url(../assets/image/games/elden-ring.jpg);
+}
+.recommended__image--death-stranding {
+  background-image: url(../assets/image/games/death-stranding.jpg);
+}
+.recommended__image--overwatch {
+  background-image: url(../assets/image/games/overwarch.jpg);
+}
+.recommended__image--god-of-war {
+  background-image: url(../assets/image/games/god-of--war.jpg);
+}
+.recommended__name {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  align-items: center;
+  font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 8px;
+  padding: 25px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s;
+}
+.recommended__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+.recommended__slider {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #262a2c;
+  border-radius: 50%;
+  color: #6f7478;
+}
+.recommended__slider--active {
+  background: #EC5656;
+  color: white;
+}
+
+.--big {
+  grid-column: span 3;
+}
+
+.--small {
+  grid-column: span 2;
+}/*# sourceMappingURL=recommended.css.map */

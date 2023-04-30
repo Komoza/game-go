@@ -1,12 +1,19 @@
-.content {
+.recommended {
   margin-top: 90px;
   width: 1340px;
   display: flex;
+  gap: 30px;
   flex-direction: column;
   background-color: #161b1d;
   border-radius: 16px;
   padding: 20px;
 
+  &__text {
+    color: white;
+    align-self: center;
+    font-size: 32px;
+    font-weight: 600;
+  }
   &__wrap {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -14,15 +21,44 @@
   }
 
   &__card {
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 30px;
-    height: 340px;
     background: grey;
     border-radius: 16px;
+    cursor: pointer;
+    &:hover .recommended__name {
+      height: 100%;
+    }
   }
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &--the-witcher-3 {
+      background-image: url(../assets/image/games/the-witcher-3.jpg);
+    }
+    &--elden-ring {
+      background-image: url(../assets/image/games/elden-ring.jpg);
+    }
+    &--death-stranding {
+      background-image: url(../assets/image/games/death-stranding.jpg);
+    }
+    &--overwatch {
+      background-image: url(../assets/image/games/overwarch.jpg);
+    }
+    &--god-of-war {
+      background-image: url(../assets/image/games/god-of--war.jpg);
+    }
+  }
+
   &__name {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    align-items: center;
     font-size: 32px;
     background-color: rgba($color: #000000, $alpha: .5);
     text-align: center;
@@ -30,10 +66,7 @@
     padding: 25px;
     font-weight: bold;
     color: white;
-  }
-  &__description {
-    font-size: 18px;
-    color: #ffffff80;
+    transition: all .3s;
   }
 
   &__pagination {
@@ -52,8 +85,8 @@
     border-radius: 50%;
     color: #6f7478;
     &--active {
-        background: white;
-        color: black;
+        background: #EC5656;
+        color: white;
     }
   }
 }
@@ -64,4 +97,3 @@
 .--small {
     grid-column: span 2;
 }
-
